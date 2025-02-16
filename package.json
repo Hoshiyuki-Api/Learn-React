@@ -14,16 +14,17 @@
     "react-icons": "^4.2.0",
     "react-scripts": "5.0.1",
     "tailwindcss": "^2.2.19",
+    "tailwindcss-animate": "^1.0.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "node server.js",
-    "build": "npm run build:tailwind && react-scripts build",
-    "build:tailwind": "tailwindcss build src/tailwind.css -o src/tailwind.output.css",
+    "build": "npm run build:css && react-scripts build",
+    "build:css": "tailwindcss -i src/tailwind.css -o src/tailwind.output.css --minify",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev": "react-scripts start",
-    "postinstall": "npm run build:tailwind"
+    "postinstall": "npm run build:css"
   },
   "eslintConfig": {
     "extends": ["react-app", "react-app/jest"]
