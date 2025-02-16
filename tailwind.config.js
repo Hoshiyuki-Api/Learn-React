@@ -1,6 +1,6 @@
 module.exports = {
   darkMode: ["class"],
-  content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}", "./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html", "*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
       colors: {
@@ -56,7 +56,6 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [],
 }
-
 
