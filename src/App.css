@@ -1,0 +1,9 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.App-header {
+  padding: 1rem;
+  text-align: center;
+}
+
